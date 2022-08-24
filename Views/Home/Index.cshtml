@@ -11,35 +11,39 @@
             /*flex-wrap: wrap-reverse;*/
             flex-flow: row wrap-reverse; /*Birleştirme yaptık*/
             background-color: #4800ff;
-            justify-content:center;
-            align-items:center;
-            align-content:space-between;
-            height:700px;
-
-
+            justify-content: center; /*Yatay Hizalama*/
+            align-items: center; /*Dikey Hizalama*/
+            /*align-content:space-between;*/
+            /* height:700px;*/
+            /*Kapsayıcı div can*/
         }
-        .can > div {
-            padding:29px;
-            background-color:#00ffff ;
-            margin:10px;
-            width:100px;
-            height:100px;
-            text-align:center;
-            vertical-align:central;
-            line-height:60px;
-            font-size:30px;
-        }
+            .can > div {
+                padding: 20px;
+                background-color: #00ffff;
+                margin: 10px;
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                /*vertical-align:central;*/
+                line-height: 60px;
+                font-size: 30px;
+            }
     </style>
 
 </head>
 <body>
+    
     <div class="can">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-
-
-
+        <div style="order:3" ;flex-grow:1>1</div>
+        <div style="order:4; flex-grow: 1">2</div>
+        <div style="order:1; flex-grow: 1">3</div>
+        <div style="order:2; flex-grow: 4">4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
     </div>
 </body>
 </html>
